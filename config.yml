@@ -1,0 +1,9 @@
+trees:
+  - tree: tiled.trees.files:Tree.from_directory
+    path: /
+    args:
+      directory: files/
+      mimetypes_by_file_ext:
+        .thing: application/x-thing
+      readers_by_mimetype:
+        application/x-thing: reader:ThingDataFrameAdapter.from_file
